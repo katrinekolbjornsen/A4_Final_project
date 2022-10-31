@@ -1,13 +1,11 @@
 # A4_Final_Project
 
 ### Goal: Goal of the tool / workflow in one sentence. i.e. to support the user to calculate the total total cost of the project.
-This use case extracts the volume of concrete in IFC-models, which can be used to determine e.g. cost, carbon footprint and the amount demanded from the manufacturer. 
+This use case helps the structural engineer to control the structural elements in an IFC-model, by checking that the elements' materials are correctly classified.
 
 
 ### Model Use (Bim Uses): Please refer initially to the Mapping BIM uses, use cases and processes section in this document.
-The IFC model is being analysed using blender bim (or another compatable software) to extract the necessary information and geometry which is further used to calculate the totale volume of concrete. 
-
-
+The IFC model is being analysed using blender bim (or another compatable software) to extract the necessary information to develop a feedback-returning Python script for the structural engineer.
 
 
 ## 3B: Propose a (design for a) tool / workflow
@@ -15,15 +13,11 @@ The IFC model is being analysed using blender bim (or another compatable softwar
 #### Description of the process of your tool / workflow.
 - The process begins with importing the IFC-model. 
 - The script searches through the model and finds the elements that are defined as structural elements.
-- If no structural element is found, the process starts over again and a new file is requested. 
-- Further, the elements defined with the material "concrete" are extracted along with their dimensions and geometry data. 
-- Among the concrete elements the script finds the beams, columns, slabs and walls. 
-- The concrete volume of each individual type is calculated and put into a list. 
-- The volumes of each type are summarized. 
-- A list then presents the volume for all the types. 
-- A complete volume for all the structural elements in the model is then created. 
-
-
+- If no structural elements are found, the process starts over again and a new file is requested.
+- The script finds the structural elements that are classified as beams, columns, slabs, and walls.
+- When the structural elements that are found do not have a specified material, a warning is presented.The warning states which element lacks material data.
+- The warning encourages the engineer to change the material data in their chosen programme (e.g. Revit).
+- After the changes are complete, the updated file can be controlled again.
 
 
 ## 3C: Information exchange
@@ -54,29 +48,17 @@ The data needed in the IFC is:
 As far as we can tell there is no need for external sources at this point. 
 
 
-
-
 ## 3D: Value: What is the potential improvement offered by this tool?
 ### This is the common question when developing tools and processes as an intrapreneur in a company. You should consider the business and societal value of this tool – does it save time to the company, does it make employees happier / more productive? Could it reduce material use in society?
-
-It saves time because there is no requirement to knowing a modelling program beforehand. 
-Ususally a structural engineer would use a program to create a list for the manufacturers, but with this script anyone in the company could extract that information. 
-It could also help developers and architects to consider the fraction of concrete used in the design. 
-The script can also calculate the carbon footprint of the building. 
-This procedure can also be implemented for other materials and buildings. 
-This results as a useful tool for the LCA and cost analysis. 
-The possibilies are endless. 
+The tool helps the structural engineers to define the material properties of the structural elements correctly, making it easier to extract important information from the IFC-file. With a "clean" IFC-file the cost calculations, life cycle assessment, carbon footprint etc., can be extracted by other parties of the project. The tool therefore opens up many possibilites for using BIM interactively in a company. 
 
 
 ### Describe the business value (How does it create value for your business / employer)
-The script makes value by saving time and making the process of extrating information from the building easy and quick.
-It also does not require a large expertise within modelling and computering. 
+The tool helps the company's engineers to create models that are correctly defined and classified, opening up the possibilities of other disciplinaries to use the IFC-model. When the engineers have a better understanding and practice of how to define the properties in the structural model, time and other resources are saved for the business.
 
 
 ### Describe the societal value (How does it make the world better). N.B. If it doesn't do either of these things (ideally it should do both - don't do it!!)
-Since it is easy to extract the total volume of concrete in the building, this can be used in the future as a measurement of the ratio of concrete used in a structure. E.g. If the ratio is set to be no more than 40% due to carbon footprint, the script could easily be used to measure if the building is within the limit. 
-
-
+By creating better and more defined models it creates value for all participants in the project, as it is easier to extract information and by that creating a more effetive project process.
 
 
 ## 3E: Delivery
@@ -88,7 +70,7 @@ The use case is solved creating a Python script in the BlenderBim add-on. Using 
 
 
 #### 10. Delivery: Description of how you would make the tool / workflow - what steps would you go through?
-The Python script would be created by first going through the process of calculating the volume of structural elements.
-Based on that, the information that is needed can be listed. The method on how to extract the information must then be discussed, and looking into the IFC classes.
-As the properties of the elements is extracted, the script must be developed to be user friendly and give continous information to the user.
+The Python script would be created by first going through the structural elements.
+Based on that, the information that is needed can be listed (i.e. investigate beams, columns, slabs, etc.). The method on how to extract the information must then be discussed, and looking into the IFC classes.
+As the properties of the elements is extracted (or cannot be extracted), the script must be developed to be user friendly and give continous information to the user.
 Blender will be used to investigate the IFC-model to understand its structure, making it easier to create the script.
