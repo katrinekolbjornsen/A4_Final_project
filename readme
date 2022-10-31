@@ -1,5 +1,4 @@
-# A3_Use_Case
-## 3A: Analyse use case
+# A4_Final_Project
 
 ### Goal: Goal of the tool / workflow in one sentence. i.e. to support the user to calculate the total total cost of the project.
 This use case extracts the volume of concrete in IFC-models, which can be used to determine e.g. cost, carbon footprint and the amount demanded from the manufacturer. 
