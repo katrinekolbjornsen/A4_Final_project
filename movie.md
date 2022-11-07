@@ -17,12 +17,3 @@ For example, the cost estimation, life cycle assessment, and many other analysis
 
 With better models and an easier work flow, time and money may be saved in the overall project.
 This affects not only the structural engineer's company, but all other involved parties.
-
-
-
-
-(Demo of the tool (if interaction / processing takes longer – edit the video 😊)
-details about the upload / submission of the videos will be given closer to the time.)
-
-
-
