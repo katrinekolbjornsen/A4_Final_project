@@ -6,7 +6,7 @@ When using building information modelling in projects, workers rely on well perf
 To ensure a better quality of the-IFC model, a Python script may be used to control if the structural materials are defined correctly by the structural engineer.
 
 
-### Who is you tool for?
+### Who is your tool for?
 
 This use case helps the structural engineer in a project to control their work, and check how well they have defined the structural materials.
 When the elements are defined correctly, it makes it easier for all the other disciplinaries in the project to do their job.
