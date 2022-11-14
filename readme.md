@@ -54,11 +54,12 @@ The tool helps the structural engineers to define the material properties of the
 
 
 ### Describe the business value (How does it create value for your business / employer)
-The tool helps the company's engineers to create models that are correctly defined and classified, opening up the possibilities of other disciplinaries to use the IFC-model. When the engineers have a better understanding and practice of how to define the properties in the structural model, time and other resources are saved for the business.
+The tool helps the company's engineers to create models that are correctly defined and classified, opening up the possibilities of other disciplinaries to use the IFC-model. When the engineers have a better understanding and practice of how to define the properties in the structural model, time and other resources are saved for the business. It is always important that the engineers perform a quality control of their own work, which the tool helps them to complete by creating a routine of control.  
 
+Another valuable aspect of the project, is that it is possible to perform using other coding languages and open BIM tools, such as Java and Speckle. The tool is a good starting point for other future work. An idea is to create a script that together with a 3D illustrator can highlight the structural object which needs a material defined. The script can also be further developed to control other aspects of the model, for example the classification of each object in the file, and other attributes.
 
 ### Describe the societal value (How does it make the world better). N.B. If it doesn't do either of these things (ideally it should do both - don't do it!!)
-By creating better and more defined models it creates value for all participants in the project, as it is easier to extract information and by that creating a more effetive project process.
+By creating better and more defined models it creates value for all participants in the project, as it is easier to extract information and by that creating a more effetive project process. In the big picture, better models helps the society in a way that the government officials and government-owned projects excecute their work more efficiently and economically. 
 
 
 ## 3E: Delivery
