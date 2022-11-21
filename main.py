@@ -51,7 +51,7 @@ for beam in beams:
     # Locates material
     if 'concrete' in beamObject:
         continue
-    elif 'wwod' in beamObject:
+    elif 'wood' in beamObject:
         continue
     elif 'timber' in beamObject:
         continue
@@ -68,7 +68,7 @@ for column in columns:
     # Locates material
     if 'concrete' in columnObject:
         continue
-    elif 'wwod' in columnObject:
+    elif 'wood' in columnObject:
         continue
     elif 'timber' in columnObject:
         continue
@@ -85,7 +85,7 @@ for slab in slabs:
     # Locates material
     if 'concrete' in slabObject:
         continue
-    elif 'wwod' in slabObject:
+    elif 'wood' in slabObject:
         continue
     elif 'timber' in slabObject:
         continue
@@ -102,7 +102,7 @@ for wall in walls:
     # Locates material
     if 'concrete' in wallObject:
         continue
-    elif 'wwod' in wallObject:
+    elif 'wood' in wallObject:
         continue
     elif 'timber' in wallObject:
         continue
