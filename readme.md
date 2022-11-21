@@ -1,11 +1,12 @@
 # A4_Final_Project
 
 ### Goal: Goal of the tool / workflow in one sentence. i.e. to support the user to calculate the total total cost of the project.
-This use case helps the structural engineer to control the structural elements in an IFC-model, by checking that the elements' materials are correctly classified.
+This use case helps the structural engineer to control the structural elements in an IFC-model, by checking that the elements' materials are classified.
 
 
 ### Model Use (Bim Uses): Please refer initially to the Mapping BIM uses, use cases and processes section in this document.
-The IFC model is being analysed using blender bim (or another compatable software) to extract the necessary information to develop a feedback-returning Python script for the structural engineer.
+The IFC model has been analysed by blender bim and excel. Blender bim was mainly used as a visual tool, that also somewhat illustrated the structure of the model in the sidebar. The excel file corresponding to the model was a more detailed and explantiory tool, where the structure of the model was illustrated in a different way. Both blender bim and excel was used to retrive information about the structure of the model and how it is divided into different objects, elements etc. 
+After learning the structure of the model, a Python script was developed to extract the necessary information to develop a feedback-returning Python script that would assist the structural engineer when making their controls of the model. 
 
 
 ## 3B: Propose a (design for a) tool / workflow
