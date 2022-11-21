@@ -1,16 +1,16 @@
 """
 This script takes the name of an ifc-model as input. It returns a report consisting of the total number of each structural
-elenemnt and the number of elements wheras the material is not defined.
+element and the number of elements whereas the material is not defined.
 
-Due to timelimits, it is chosen to make a simplified script where the aim is to present the idea and proove a point. It is 
-for now based on some assumptions, where the thought is to improve the script in a further work. First, it is assumed that 
+Due to time limit on the project, it is chosen to make a simplified script where the aim is to present the idea and to prove a point. It is 
+for now based on some assumptions, where the thought is to improve the script in further work. First, it is assumed that 
 the ifc-model only consist of structural elements. This is based on the fact that this scrip/tool is, for now, only predicted 
 to be used by structural engineers as a "self check" tool. Next up, it is assumed that if an element is defined with its 
 material, the material is defined in "ObjectType". This would be improved in a future work.
 
 The thought of this tool is to make the quality check less time consuming. For a future work, the script would be improved by
-classify by id in general, like ccs, cci and bim7a. As well, it would be improved by having a quality check for more information
-data in the structural model. It could also be cool to illustrate the model, with an highlight of the elements where something 
+classify by id in general, like ccs, cci and bim7a. As well, it would be improved by having a quality check for the other data containing 
+information in the structural model. It could also be cool to illustrate the model, with a highlight of the elements where some information 
 is missing. The improvement could consist of making the tool cooparate with other programs, and make it as an open source.
 """
 
