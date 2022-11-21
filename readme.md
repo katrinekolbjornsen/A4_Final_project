@@ -65,13 +65,10 @@ By creating better and more defined models it creates value for all participants
 ## 3E: Delivery
 ### In this assignment we will focus on the input data that you need for your final tool / workflow. 
 #### 9. Your tool/workflow: Description of how your tool / workflow would solve the use case 
-
-
-The use case is solved creating a Python script in the BlenderBim add-on. Using an open IFC platform makes it accessable for users with limited resources. 
+The use case is solved by creating a Python script that exctracts the wanted information from the IFC-model and presents its finding in a report. 
+By using an open IFC platform, this tool is accessable for everyone, including users with limited resources. 
 
 
 #### 10. Delivery: Description of how you would make the tool / workflow - what steps would you go through?
-The Python script would be created by first going through the structural elements.
-Based on that, the information that is needed can be listed (i.e. investigate beams, columns, slabs, etc.). The method on how to extract the information must then be discussed, and looking into the IFC classes.
-As the properties of the elements is extracted (or cannot be extracted), the script must be developed to be user friendly and give continous information to the user.
-Blender will be used to investigate the IFC-model to understand its structure, making it easier to create the script.
+The Python script imports the model, and searches throught the elements with materials defined as "ObjectType". The elements that are defined with the materials "wood", "steel", "concrete" and "timber" is counted and presented in the report. Elements without a defined material is also counted and presented in the report. This process is explained further up in the text. 
+The main goal is to extract the necessary information in an easy way, that is user friendly and easy for everyone to use. 
