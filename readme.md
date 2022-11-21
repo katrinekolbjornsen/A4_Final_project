@@ -12,11 +12,12 @@ After learning the structure of the model, a Python script was developed to extr
 ## 3B: Propose a (design for a) tool / workflow
 ### Process: model the process diagram from your use case in BPMN.io please remember to save the .bpmn file and you can save a .svg file that you can insert into your report. 
 #### Description of the process of your tool / workflow.
-- The process begins with importing the IFC-model. 
-- The script searches through the model and finds the elements that are defined as structural elements.
-- If no structural elements are found, the process starts over again and a new file is requested.
-- The script finds the structural elements that are classified as beams, columns, slabs, and walls.
-- When the structural elements that are found do not have a specified material, a warning is presented.The warning states which element lacks material data.
+- Before the process begins, some limitations and assumptions are stated. 
+- The process begins with importing the necessary packages to be used in the python-script. 
+- The IFC-model is imported into the file. 
+- The script searches through the model and finds the elements defined with a material in "ObjectType".
+- The script seaches through the elements classified as beams, columns, slabs, and walls.
+- When the structural elements that are found do not have a specified material, a warning is presented. The warning states how many of each type of element that lacks material data.
 - The warning encourages the engineer to change the material data in their chosen programme (e.g. Revit).
 - After the changes are complete, the updated file can be controlled again.
 
@@ -33,16 +34,14 @@ LOI 300: 'PROPERTIES FOR SERVICE' - Classification: Classification code, Type (-
 ### IFC: Describe the IFC entities and properties for each of the elements you identified in your information exchange.
 #### Describe the data that you need to find in the IFC
 The data needed in the IFC is:
-- IFC space
-- IFC building element
-- IFC beam
-- IFC column
-- IFC slab
-- IFC wall
-- IFC material
-- IFC geometry 
-- IFC name
-- IFC type 
+- IFC Beam
+- IFC Bolumn
+- IFC Slab
+- IFC Wall
+- IFC ObjectType
+- IFC Material
+- IFC Name
+- IFC Type 
 
 
 #### Describe the data that you need to find in an external sources i.e. BR18. Based on assumptions (useful when we don't have the 'real' data that we need for our tool)
@@ -57,17 +56,17 @@ The tool helps the structural engineers to define the material properties of the
 ### Describe the business value (How does it create value for your business / employer)
 The tool helps the company's engineers to create models that are correctly defined and classified, opening up the possibilities of other disciplinaries to use the IFC-model. When the engineers have a better understanding and practice of how to define the properties in the structural model, time and other resources are saved for the business. It is always important that the engineers perform a quality control of their own work, which the tool helps them to complete by creating a routine of control.  
 
-Another valuable aspect of the project, is that it is possible to perform using other coding languages and open BIM tools, such as Java and Speckle. The tool is a good starting point for other future work. An idea is to create a script that together with a 3D illustrator can highlight the structural object which needs a material defined. The script can also be further developed to control other aspects of the model, for example the classification of each object in the file, and other attributes. This makes the project highly flexible if the employees have experiences with different languages and programs.
+Another valuable aspect of the project, is that it is possible to use other coding languages and open BIM tools, such as Java and Speckle. The tool is a good starting point for other future work. An idea is to create a script that together with a 3D illustrator can highlight the structural object which needs a material defined. The script can also be further developed to control other aspects of the model, for example the classification of each object in the file, and other attributes. This makes the project highly flexible if the employees have experiences with different languages and programs.
 
 ### Describe the societal value (How does it make the world better). N.B. If it doesn't do either of these things (ideally it should do both - don't do it!!)
-By creating better and more defined models it creates value for all participants in the project, as it is easier to extract information and by that creating a more effetive project process. In the big picture, better models helps the society in a way that the government officials and government-owned projects excecute their work more efficiently and economically. 
+By creating better and more defined models it creates value for all participants in the project, as it is easier to extract information and by that creating a more effetive project process. In the big picture, better models helps the society in a way that the government officials and government-owned projects excecute their work more efficiently and economically. A more correct model would also minimize faults and the possiblility for mistakes in the excecution part of the project, which would potensially lead to less CO2-emissions and use of materials, since nothing has to be redone or changed. 
 
 
 ## 3E: Delivery
 ### In this assignment we will focus on the input data that you need for your final tool / workflow. 
-
-
 #### 9. Your tool/workflow: Description of how your tool / workflow would solve the use case 
+
+
 The use case is solved creating a Python script in the BlenderBim add-on. Using an open IFC platform makes it accessable for users with limited resources. 
 
 
