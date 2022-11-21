@@ -18,12 +18,10 @@ is missing. The improvement could consist of making the tool cooparate with othe
 import ifcopenshell
 import ifcopenshell.geom
 import os.path
-import time
 
 
-filename = 'Example_Structure'
-#filename = input('Please input the name of an IFC-file (E.g. Example_Structure.ifc): ')
-model_url = "model/"+name+".ifc"
+filename = input('Please input the name of an IFC-file (E.g. Example_Structure): ')
+model_url = "model/"+filename+".ifc"
 
 if (os.path.exists(model_url)):
         ifc = ifcopenshell.open(model_url)
