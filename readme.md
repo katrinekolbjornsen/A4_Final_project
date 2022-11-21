@@ -1,19 +1,19 @@
 # A4_Final_Project
 
 ### Goal: Goal of the tool / workflow in one sentence. i.e. to support the user to calculate the total total cost of the project.
-This use case helps the structural engineer to control the structural elements in an IFC-model, by checking that the elements' materials are classified.
+This use case helps the structural engineer to control the structural elements in an IFC-model, by checking that the elements' materials are defined.
 
 
 ### Model Use (Bim Uses): Please refer initially to the Mapping BIM uses, use cases and processes section in this document.
-The IFC model has been analysed by blender bim and excel. Blender bim was mainly used as a visual tool, that also somewhat illustrated the structure of the model in the sidebar. The excel file corresponding to the model was a more detailed and explantiory tool, where the structure of the model was illustrated in a different way. Both blender bim and excel was used to retrive information about the structure of the model and how it is divided into different objects, elements etc. 
+The IFC model has been analysed by BlenderBIM and Excel. BlenderBIM was mainly used as a visual tool, that also somewhat illustrated the structure of the model in the sidebar. The Excel file corresponding to the model was a more detailed and explantiory tool, where the structure of the model was illustrated in a different way. Both BlenderBIM and Excel was used to retrive information about the structure of the model and how it is divided into different objects, elements etc. 
 After learning the structure of the model, a Python script was developed to extract the necessary information to develop a feedback-returning Python script that would assist the structural engineer when making their controls of the model. 
 
 
 ## 3B: Propose a (design for a) tool / workflow
 ### Process: model the process diagram from your use case in BPMN.io please remember to save the .bpmn file and you can save a .svg file that you can insert into your report. 
 #### Description of the process of your tool / workflow.
-- Before the process begins, some limitations and assumptions are stated. 
-- The process begins with importing the necessary packages to be used in the python-script. 
+- Before the process begins, some limitations and assumptions are stated 
+- The process begins with importing the necessary packages to be used in the Python-script. 
 - The IFC-model is imported into the file. 
 - The script searches through the model and finds the elements defined with a material in "ObjectType".
 - The script seaches through the elements classified as beams, columns, slabs, and walls.
@@ -45,7 +45,7 @@ The data needed in the IFC is:
 
 
 #### Describe the data that you need to find in an external sources i.e. BR18. Based on assumptions (useful when we don't have the 'real' data that we need for our tool)
-As far as we can tell there is no need for external sources at this point. 
+There is no need for external sources at this point. 
 
 
 ## 3D: Value: What is the potential improvement offered by this tool?
