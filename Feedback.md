@@ -1,4 +1,6 @@
+
 ##Feedback 28.11.2022
+
 ### Group 10
 A tool to calculate the dead load of structural elements via a website where you upload your file.
 Finds the elements and highlight them in the model and displays information for the selected element in list.
