@@ -32,6 +32,19 @@ Checks for deflection and stress.
 In program you can choose if it is a distributed load or concentrated.
 Negative - always assume simply supported, and no visual representation.
 
+### What can the structure groups do next year?
+Easy to repeat preveious work:
+- global stability
+- optimalizing structural elements, and reduce cross sections to reduce cost and increase sustainability
+- create a load distribution in color scemene on a 3D model
+- script that can detect surrounding elements and the transferring between them
+- crash test/check connection of elements
+
+
+
+
+
+
 
 
 
