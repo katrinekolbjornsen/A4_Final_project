@@ -2,7 +2,8 @@
 
 ## Group 9 (us)
 ### Feedback from other groups:
-Negative - Unclear what we meant with quality control
+Negative - Unclear what we meant with quality control.
+
 Suggestion for future work: what if one beam is of the wrong material? Say one beam among concrete beams - create a tool that notice this.
 ### Reflection of our own work:
 For the future, it would be interesting to expand the script and connect it with a 3D-model program. As the other groups said, it is useful to have a tool that visualizes the output from the script. An idea is to combine the script, 3D-illustrator, and a web page together. That would also help the process of using something a Python consol
